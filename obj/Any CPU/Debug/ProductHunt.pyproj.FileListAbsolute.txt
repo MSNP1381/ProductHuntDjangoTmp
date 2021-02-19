@@ -1,0 +1,3 @@
+C:\Users\moham\Documents\PycharmProjects\ProductHunt\obj\Any CPU\Debug\ProductHunt.pyproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\PycharmProjects\ProductHunt\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\moham\Documents\PycharmProjects\ProductHunt\bin\wfastcgi.py

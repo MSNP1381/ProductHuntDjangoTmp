@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6572b0c1-4ba6-4d2f-b01d-1039f77db5a4}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId />
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <DjangoSettingsModule>ProductHunt.settings</DjangoSettingsModule>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="accounts_app\admin.py" />
+    <Compile Include="accounts_app\apps.py" />
+    <Compile Include="accounts_app\migrations\__init__.py" />
+    <Compile Include="accounts_app\models.py" />
+    <Compile Include="accounts_app\tests.py" />
+    <Compile Include="accounts_app\views.py" />
+    <Compile Include="accounts_app\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="ProductHunt\asgi.py" />
+    <Compile Include="ProductHunt\settings.py" />
+    <Compile Include="ProductHunt\urls.py" />
+    <Compile Include="ProductHunt\wsgi.py" />
+    <Compile Include="ProductHunt\__init__.py" />
+    <Compile Include="productHunt_app\admin.py" />
+    <Compile Include="productHunt_app\apps.py" />
+    <Compile Include="productHunt_app\migrations\__init__.py" />
+    <Compile Include="productHunt_app\models.py" />
+    <Compile Include="productHunt_app\tests.py" />
+    <Compile Include="productHunt_app\views.py" />
+    <Compile Include="productHunt_app\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="static\logo.png" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\home.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="accounts_app" />
+    <Folder Include="accounts_app\migrations" />
+    <Folder Include="ProductHunt" />
+    <Folder Include="productHunt_app" />
+    <Folder Include="productHunt_app\migrations" />
+    <Folder Include="static" />
+    <Folder Include="templates" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+    <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+    <WebProjectProperties>
+        <AutoAssignPort>True</AutoAssignPort>
+        <UseCustomServer>True</UseCustomServer>
+        <CustomServerUrl>http://localhost</CustomServerUrl>
+        <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+    </WebProjectProperties>
+    </FlavorProperties>
+    <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+    <WebProjectProperties>
+        <StartPageUrl>
+        </StartPageUrl>
+        <StartAction>CurrentPage</StartAction>
+        <AspNetDebugging>True</AspNetDebugging>
+        <SilverlightDebugging>False</SilverlightDebugging>
+        <NativeDebugging>False</NativeDebugging>
+        <SQLDebugging>False</SQLDebugging>
+        <ExternalProgram>
+        </ExternalProgram>
+        <StartExternalURL>
+        </StartExternalURL>
+        <StartCmdLineArguments>
+        </StartCmdLineArguments>
+        <StartWorkingDirectory>
+        </StartWorkingDirectory>
+        <EnableENC>False</EnableENC>
+        <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+    </WebProjectProperties>
+    </FlavorProperties>
+</VisualStudio>
+  </ProjectExtensions>
+</Project>
