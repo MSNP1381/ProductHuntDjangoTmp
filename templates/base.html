@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
 {% load static %} 
 <head>
@@ -27,9 +27,10 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <div class="container-fluid">
-            <img src="{% static 'logo.png' %}" class="d-inline-block align-top" />
-            <a class="navbar-brand" href="#">Product Hunt</a>
+        
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'logo.png' %}" class="d-inline-block align-top" />Product Hunt</a>
+           
             <button
                     class="navbar-toggler"
                     type="button"
@@ -39,16 +40,15 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
             >
-
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="">SignUP</a>
+                <div class="navbar-nav ml-right">
+                    <a class="nav-link  ml-right" href="">SignUP</a>
                     <a class="nav-link" href="">Login</a>
                
                 </div>
             </div>
-        </div>
+      
     </div>
     </nav>
 </header>
@@ -59,7 +59,7 @@
 
 <footer class="text-muted py-5">
     <div class="container" align="center">
-        <p align="center">&copy; MSNP {% now "Y" %}</p>
+        <p align="center">Happy {% now "Y" %}</p>
     </div>
 </footer>
 
