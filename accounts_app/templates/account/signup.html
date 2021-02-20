@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <body class="text-center">
+    <main class="form-signup">
+
+ <br>
+ <br>
+        {% if error %}
+       <div class="alert alert-danger" role="alert">
+          <strong>Error: </strong> {{ error }}
+</div>
+        {% endif %}
+    <form method="post" action="{% url 'signup' %}">
+        {% csrf_token %}
+        <img class="mb-4 ml-center  " src="{% static 'logo.png' %}" alt="">
+        <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+        <label for="id_username" class="visually-hidden">User name</label>
+        <input type="text" id="id_username" class="form-control" name="user" placeholder="User name" required autofocus>
+
+        <label for="inputPassword" class="visually-hidden">Password</label>
+        <input type="password" id="inputPassword" class="form-control" name="pass1" placeholder="Password" required>
+
+            <label for="inputPassword_again" class="visually-hidden">Password Again</label>
+        <input type="password" id="inputPassword_again" class="form-control" name="pass2" placeholder="Password Again" required>
+<br>
+
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+    </form>
+    </main>
+    </body>
+{% endblock %}
