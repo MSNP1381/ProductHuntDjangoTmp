@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <body class="text-center">
+    <main class="form-signup">
+
+        <br>
+        <br>
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                <strong>Error: </strong> {{ error }}
+            </div>
+        {% endif %}
+        <form method="post" action="{% url 'create' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <h1 class="h3 mb-3 fw-normal">Create product</h1>
+            <label for="title" class="visually-hidden">Title</label>
+            <input type="text" id="title" class="form-control" name="title" placeholder="Title" required autofocus>
+
+            <label for="body" class="visually-hidden">Body</label>
+            <input type="textbox" id="body" class="form-control" name="body" placeholder="Body" required>
+
+                        <label for="url1" class="visually-hidden">Url</label>
+            <input type="url" id="url1" class="form-control" name="url" placeholder="Url" required>
+
+            <label for="image" class="visually-hidden">Image</label>
+            <input type="file" id="image" class="form-control" name="image" placeholder="Image" alt='' required>
+
+            <label for="icon" class="visually-hidden">Icon</label>
+            <input type="file" id="icon" class="form-control" name="icon" placeholder="Icon" alt='' required >
+            <br>
+
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Save</button>
+        </form>
+    </main>
+    </body>
+{% endblock %}
